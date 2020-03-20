@@ -5,7 +5,7 @@ class Song
   @@genres = []
 
 
-  def initialize(song_name, artist, genre)
+  def initialize(song_name,artist,genre)
     @name = song_name
     @artists = artist
     @genre = genre
@@ -20,7 +20,7 @@ class Song
   end
 
   def self.artists
-    @@artists.uniq!
+    @@artists.uniq
   end
 
   def self.genres
